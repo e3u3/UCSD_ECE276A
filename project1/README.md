@@ -15,8 +15,8 @@ python3 stop_sign_detector.py
 ## File description
 ```
 extract.py:
-Load the pixel information from `mask.pickle` using the module pickle. 
-Implement the K-ary Logistic regression model on the labelled data and obtain the weight matrix for classification on the unseen images.
+1.Load the pixel information from `mask.pickle` using the module pickle. 
+2.Implement the K-ary Logistic regression model on the labelled data and obtain the weight matrix for classification on the unseen images.
 ```
 ```
 stop_sign_detector.py:
