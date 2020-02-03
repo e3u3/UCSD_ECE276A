@@ -30,4 +30,4 @@ Input:binary image
 Output:the bottom-left and top-right points of the detected stop sign.
 ```
 ## Acknowledgments
-Qinru Li, Yaosen Lin, Zhirui Dai, Yuhan Liu, Zhijing Liang and I hand-label the trainset together. Thanks for their efforts.
+Qinru Li, Yaosen Lin, Zhirui Dai, Yuhan Liu, Zhijing Liang and I hand-label the trainset together. I acknowledge the kindly collaboration from them!
