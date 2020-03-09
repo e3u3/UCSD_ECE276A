@@ -35,4 +35,4 @@ upload.py:
 1.Reload the occupancy map and visualize for analysis.
 ```
 ## Acknowledgments
-I¡¯m grateful to all the classmates who shared their ideas on piazza.
+I'm grateful to all the classmates who shared their ideas on piazza.
