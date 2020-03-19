@@ -46,7 +46,7 @@ def visualize_trajectory_2d(new_map,pose,path_name="trajectory",show_ori=False):
   '''
   function to visualize the trajectory in 2D
   Input:
-      pose:   4*4*N matrix representing the camera pose,
+      pose:   4*4*N matrix representing the camera pose, 
               where N is the number of pose, and each
               4*4 matrix is in SE(3)
   '''

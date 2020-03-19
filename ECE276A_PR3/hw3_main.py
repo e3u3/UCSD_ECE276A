@@ -114,8 +114,7 @@ def compute_H_(vector,mean,cam_T_imn,steoro_intrinsic):
 if __name__ == '__main__':
     filename = "./data/0022.npz"
     mean = np.eye(4)
-    conva = np.eye(6) * 0
-    print(conva)
+    conva = np.zeros(6)
     motion_noise = 0.5 * np.eye(6)
     measurement_noise_con = 4
     t,features,linear_velosity,rotational_velosity,K,b,cam_T_imn = load_data(filename)
@@ -176,25 +175,8 @@ if __name__ == '__main__':
     print(conva)
     new_map = map(map_mean)
     visualize_trajectory_2d(new_map,trajectory, show_ori=True)
-
 	# (b) Landmark Mapping via EKF Update
 
 	# (c) Visual-Inertial SLAM
 
 	# You can use the function below to visualize the robot pose over time
-    ##for part c
-    z = [0]*20+['A']*5+['B']*5+['C']*20+['D']*5
-    u = [1]*55
-    bel = np.hstack ((0.25,0.25,0.25,0.25)) #initial value
-    for i in range(20, len(u)):
-        if i%2 == 0:
-            u[i] = 1
-        else:
-            u[i] = 0
-    print(belief_update(z,u,bel))
-    ##for part c
-    ##for parb b
-    z = ['A']*5+['B']*5+['C']*10+['D']*5
-    bel = np.hstack ((0.25,0.25,0.25,0.25)) #initial value
-    print(mes_belief_update(z,bel))
-    ##for parb b
